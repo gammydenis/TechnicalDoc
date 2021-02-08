@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/index.css">
+
+    <title>MAGCODE</title>
+  </head>
+  <body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
+   <div class="container-fluid">
+      <a class="navbar-brand" href="techdoc.html">LIBREMAGCODE.COM</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle active-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Languages
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">java</a>
+                  <a class="dropdown-item" href="techdoc.html">javascript</a>
+                  <div class="dropdown-divider" href="#"></div>
+                  <a class="dropdown-item" href="#" btn btn-dark>more</a>
+               </div>
+            </li>
+         </ul>
+         <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+         </form>
+      </div>
+   </div>
+</nav>
+
+<div class="container-fluid">
+   <div class="row">
+      <div class="col">
+         <nav id="navbar">
+            <ul class="nav flex-column">
+               <header>Php Documentation</header>
+               <li class="nav-item">
+                  <a class="nav-link introduction" href="#Introduction">Introduction</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link layout" href="#phpins">PHP Installation</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link content" href="#syntax">PHP Syntax</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link components" href="#var">PHP Variables</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link reference" href="#ech">PHP Echo</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link reference" href="#str">PHP String</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link reference" href="#ope">PHP Operation</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link reference" href="#ref">Reference</a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+      <div class="col-md-9">
+         <main id="main-doc">
+         <div class="head-box">
+            <h1>PHP(Hypertext Preprocessor)</h1>
+         </div>
+         <section class="main-section" id="Introduction">
+            <header>
+               <h2>php - what is it?</h2>
+            </header>
+            <article>
+               <p>Taken directly from PHP's home, PHP.net, "PHP is an HTML-embedded scripting language. Much of its syntax is borrowed from C, Java and Perl with a couple of unique PHP-specific features thrown in. The goal of the language is to allow web developers to write dynamically generated pages quickly."</p>
+               <p>This is generally a good definition of PHP. However, it does contain a lot of terms you may not be used to. Another way to think of PHP is a powerful, behind the scenes scripting language that your visitors won't see!</p>
+               <p>When someone visits your PHP webpage, your web server processes the PHP code. It then sees which parts it needs to show to visitors(content and pictures) and hides the other stuff(file operations, math calculations, etc.) then translates your PHP into HTML. After the translation into HTML, it sends the webpage to your visitor's web browser</p>
+            </article>
+         </section>
+         <section class="main-section" id="phpins">
+            <header>
+               <h2>Php Installation</h2>
+            </header>
+            <article>
+               <p>For those who are experienced enough to do this yourself, simply head over to PHP.net - Downloads and download the most recent version of PHP.</p>
+               <p>However, if you are like most of us, you will most likely want to follow a guide to installing PHP onto your computer. These guides are kindly provided by PHP.net based on the operating system that you are using.</p>
+               <ul>
+                  <li>PHP - Windows - Windows Installation Guide</li>
+                  <li>PHP - Mac - Mac Installation Guide</li>
+                  <li>PHP - Linux - Linux Installation Guide</li>
+               </ul>
+            </article>
+         </section>
+         <section class="main-section" id="syntax">
+            <header>
+               <h2>PHP Syntax</h2>
+            </header>
+            <article>
+               <ul>
+                  <li>
+                     <p>Syntax - The rules that must be followed to write properly structured code.</p>
+                  </li>
+               </ul>
+               <p>PHP's syntax and semantics are similar to most other programming languages (C, Java, Perl) with the addition that all PHP code is contained with a tag, of sorts. All PHP code must be contained within the following.</p>
+               <p>PHP Code:</p>
+               <p>
+               <pre>
+    <code>
+                < ? php
+         ? >
+
+       or the shorthand PHP tag that requires shorthand support to be enabled
+    on your server...
+
+      < ?
+      ? >
+  </code>
+  </pre>
+            </article>
+         </section>
+         <section class="main-section" id="var">
+            <header>
+               <h2>PHP Variables</h2>
+            </header>
+            <article>
+               <p>If you have never had any programming, Algebra, or scripting experience, then the concept of variables might be a new concept to you. A detailed explanation of variables is beyond the scope of this tutorial, but we've included a refresher crash course to guide you..</p>
+               <p>A variable is a means of storing a value, such as text string "Hello World!" or the integer value 4. A variable can then be reused throughout your code, instead of having to type out the actual value over and over again. In PHP you define a variable with the following form:</p>
+               <ul>
+                  <li>
+                     $variable_name = Value;
+                  </li>
+               </ul>
+               <p>
+                  If you forget that dollar sign at the beginning, it will not work. This is a common mistake for new PHP programmers!
+               </p>
+               <p>
+                  Note: Also, variable names are case-sensitive, so use the exact same capitalization when using a variable. The variables $a_number and $A_number are different variables in PHP's eyes
+               </p>
+               <p>PHP Code:</p>
+               <pre>
+    <code>
+      < ?php
+$hello = "Hello World!";
+$a_number = 4;
+$anotherNumber = 8;
+? >
+    </code>
+  </pre>
+            </article>
+         </section>
+         <section class="main-section" id="ech">
+            <header>
+               <h2>PHP Echo</h2>
+            </header>
+            <article>
+               <p>As you saw in the previous lesson, the PHP command echo is a means of outputting text to the web browser. Throughout your PHP career you will be using the echo command more than any other. So let's give it a solid perusal!</p>
+               <p>To output a string, like we have done in previous lessons, use PHP echo. You can place either a string variable or you can use quotes, like we do below, to create a string that the echo function will output.</p>
+               <p>PHP Code:</p>
+               <pre>
+                <code>
+                  < ?php
+$myString = "Hello!";
+echo $myString;
+echo "<h5>I love using PHP!</h5>";
+?>
+                </code>
+              </pre>
+            </article>
+         </section>
+         <section class="main-section" id="str">
+            <header>
+               <h2>PHP String</h2>
+            </header>
+            <article>
+               <p>In the last lesson, PHP Echo, we used strings a bit, but didn't talk about them in depth. Throughout your PHP career you will be using strings a great deal, so it is important to have a basic understanding of PHP strings.</p>
+               <p>Before you can use a string you have to create it! A string can be used directly in a function or it can be stored in a variable. Below we create the exact same string twice: first storing it into a variable and in the second case we send the string directly to echo.</p>
+               <p>PHP Code:</p>
+               <pre>
+                <code>
+                  $my_string = "Tizag - Unlock your potential!";
+echo "Tizag - Unlock your potential!";
+echo $my_string;
+                </code>
+              </pre>
+            </article>
+         </section>
+         <section class="main-section" id="ope">
+            <header>
+               <h2>PHP Operation</h2>
+            </header>
+            <article>
+               <p>In all programming languages, operators are used to manipulate or perform operations on variables and values. You have already seen the string concatenation operator "." in the Echo Lesson and the assignment operator "=" in pretty much every PHP example so far.</p>
+               <p>There are many operators used in PHP, so we have separated them into the following categories to make it easier to learn them all.</p>
+               <ul>
+                  <li>Assignment Operators</li>
+                  <li>Arithmetic Operators</li>
+                  <li>Comparison Operators</li>
+                  <li>String Operators</li>
+                  <li>Combination Arithmetic & Assignment Operators</li>
+               </ul>
+            </article>
+         </section>
+         <section class="main-section" id="ref">
+            <header>
+               <h2>Reference</h2>
+            </header>
+            <article>
+               <ul>
+                  <li>
+                     All documents taken from <a href="http://www.tizag.com/phpT/operators.php">tizag</a>
+                  </li>
+               </ul>
+            </article>
+         </section>
+         <hr>
+         <footer>
+            <p>@copyright</p>
+            <p>DenisLinoG2021</p>
+         </footer>
+      </div>
+   </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+    </script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>
